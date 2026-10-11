@@ -67,6 +67,7 @@ def main():
     site = ROOT / "site"
     site.mkdir(exist_ok=True)
     shutil.copy(ROOT / "style.css", site / "style.css")
+    shutil.copy(ROOT / "robots.txt", site / "robots.txt")  # preview: blocks every crawler
     if (site / "img").exists():
         shutil.rmtree(site / "img")
     shutil.copytree(ROOT / "img", site / "img", ignore=shutil.ignore_patterns("raw"))
