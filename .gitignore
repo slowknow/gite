@@ -1,0 +1,5 @@
+site/
+artifact/
+img/raw/
+__pycache__/
+.DS_Store

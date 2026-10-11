@@ -1,0 +1,140 @@
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">A l'Ombre du Vieux Poirier</a>
+    <nav class="main" aria-label="{nav_label}">
+      <a href="#hoeve">{nav_house}</a>
+      <a href="#tuin">{nav_garden}</a>
+      <a href="#omgeving">{nav_area}</a>
+      <a href="#ligging">{nav_location}</a>
+      <a href="#contact">{nav_contact}</a>
+    </nav>
+    <div class="lang" aria-label="{lang_label}">{lang_links}</div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero wrap">
+  <div class="photo">
+    <img src="{p}img/hero.jpg" alt="{alt_hero}" fetchpriority="high">
+    <div class="hero-text">
+      <h1>{h1}</h1>
+      <p class="tag">{tagline}</p>
+      <div class="facts">{hero_facts}</div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="intro">
+    <p class="lead">{intro_lead}</p>
+    <div class="stack">
+      {intro_paragraphs}
+      <p class="sig">{intro_signature}</p>
+    </div>
+    <div class="photo"><img src="{p}img/ligstoelen.jpg" alt="{alt_deckchairs}" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="band" id="hoeve">
+  <div class="wrap">
+    <p class="eyebrow">{house_eyebrow}</p>
+    <h2>{house_h2}</h2>
+    <p class="after">{house_intro}</p>
+
+    <div class="troeven">{facts}</div>
+
+    <div class="buildings">
+      <article class="building">
+        <div class="photo"><img src="{p}img/woonhuis-salon.jpg" alt="{alt_woonhuis}" loading="lazy"></div>
+        <h3>{woonhuis_h3}</h3>
+        <p>{woonhuis_intro}</p>
+        {woonhuis_floors}
+      </article>
+      <article class="building">
+        <div class="photo"><img src="{p}img/schuur-keuken.jpg" alt="{alt_schuur}" loading="lazy"></div>
+        <h3>{schuur_h3}</h3>
+        <p>{schuur_intro}</p>
+        {schuur_floors}
+      </article>
+    </div>
+
+    <div class="gallery">{gallery}</div>
+  </div>
+</section>
+
+<section class="wrap" id="tuin">
+  <div class="garden">
+    <div class="photo"><img src="{p}img/tuin.jpg" alt="{alt_garden}" loading="lazy"></div>
+    <div class="stack">
+      <p class="eyebrow">{garden_eyebrow}</p>
+      <h2>{garden_h2}</h2>
+      <p>{garden_text}</p>
+      <ul class="chips">{garden_chips}</ul>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="omgeving">
+  <div class="wrap">
+    <div class="omgeving-top">
+      <div class="stack">
+        <p class="eyebrow">{area_eyebrow}</p>
+        <h2>{area_h2}</h2>
+        <p>{area_intro}</p>
+      </div>
+      <div class="photo"><img src="{p}img/winterpad.jpg" alt="{alt_winterpath}" loading="lazy"></div>
+    </div>
+    <div class="cards">{area_cards}</div>
+  </div>
+</section>
+
+<section class="wrap" id="ligging">
+  <div class="loc">
+    <div class="photo"><img src="{p}img/voorerf.jpg" alt="{alt_front}" loading="lazy"></div>
+    <div class="stack">
+      <p class="eyebrow">{loc_eyebrow}</p>
+      <h2>{loc_h2}</h2>
+      <address>Rue Saint-Martin 16<br>6960 Malempré (Manhay)<br>{loc_region}</address>
+      <p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Rue+Saint-Martin+16%2C+6960+Malempr%C3%A9%2C+Manhay" target="_blank" rel="noopener">{loc_maps}</a></p>
+      <p class="note">{loc_note}</p>
+    </div>
+    <div>{directions}</div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="eyebrow">{contact_eyebrow}</p>
+    <h2>{contact_h2}</h2>
+    <p class="after">{contact_text}</p>
+    <div class="people">
+      <div class="person">
+        <b>Yves</b>
+        <a href="tel:+32473246802">+32 473 24 68 02</a>
+        <a href="mailto:yves.driessens@ydeepartners.be">yves.driessens@ydeepartners.be</a>
+      </div>
+      <div class="person">
+        <b>Elke</b>
+        <a href="tel:+32478660179">+32 478 66 01 79</a>
+        <a href="mailto:elke.ceuppens@gmail.com">elke.ceuppens@gmail.com</a>
+      </div>
+    </div>
+    <a class="btn" href="https://www.facebook.com/gitealombreduvieuxpoirier" target="_blank" rel="noopener">{contact_facebook}</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="labels">
+      <img src="{p}img/logo-accueil.jpg" alt="Accueil Champêtre en Wallonie" loading="lazy">
+      <img src="{p}img/logo-velo.jpg" alt="Bienvenue Vélo" loading="lazy">
+      <img src="{p}img/logo-coeur.jpg" alt="Cœur de l'Ardenne" loading="lazy">
+      <img src="{p}img/logo-visitardenne.jpg" alt="Visit Ardenne" loading="lazy">
+      <img src="{p}img/logo-visitwallonia.jpg" alt="Visit Wallonia" loading="lazy">
+    </div>
+    <div>© A l'Ombre du Vieux Poirier · Rue Saint-Martin 16, 6960 Malempré · {footer_nosmoking}</div>
+  </div>
+</footer>
